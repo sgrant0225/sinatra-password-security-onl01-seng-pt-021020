@@ -37,7 +37,7 @@ class ApplicationController < Sinatra::Base
     redirect "/success"
   else
     redirect "/failure"
-  end
+   end
 	end
 
 	get "/success" do #renders a success.erb page, which should be displayed once a user successfully logs in.
