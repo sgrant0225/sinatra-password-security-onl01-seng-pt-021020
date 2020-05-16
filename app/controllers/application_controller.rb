@@ -30,7 +30,7 @@ class ApplicationController < Sinatra::Base
 	end
 
 	post "/login" do
-		#your code here!
+		user = User.find_by(:username => params[:username])
 	end
 
 	get "/success" do #renders a success.erb page, which should be displayed once a user successfully logs in.
